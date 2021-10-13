@@ -46,7 +46,6 @@
 /* header ends */
 
 /* jumbotron */
-
 .gs-jumbo {
   height: 800px; /*questa andrà tolta*/
   background-color: brown;
@@ -57,10 +56,20 @@
   background-color: chartreuse;
 }
 
-
 .gs-jumbo {
   align-items: end;
   padding-bottom: 60px;
 }
 
+/* cards after jumbotron */
 
+.gs-container-90 {
+  width: 90%;
+  margin: 0 auto; 
+}
+
+.cards {
+  height: 100px; /* questa andrà tolta */
+  background-color: darkgoldenrod;
+  margin: 8px;
+}
