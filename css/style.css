@@ -1,0 +1,34 @@
+
+.sony {
+  background-color: black;
+}
+
+.sony-logo img {
+  position: sticky;
+  width: 70px;
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar a {
+  color: black !important;
+}
+
+.hamburger {
+  border: 1px solid black;
+}
+
+.hamburger-icon i{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sub-link {
+  list-style: none;
+}
+
+.chevron img{
+  width: 10px ;
+}
