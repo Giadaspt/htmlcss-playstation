@@ -9,6 +9,11 @@
   margin: 0 auto;
 }
 
+.gs-container-60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
 /* header */
 .container-fluid{
   padding: 0 !important;
@@ -62,6 +67,7 @@
   align-items: end;
   padding-bottom: 60px;
 }
+
 .gs-image {
   height: 200px; /*questa andrà tolta*/
   width: 200px; /*questa andrà tolta*/
@@ -124,3 +130,54 @@
 
 }
 /* never stop exploring ends */
+
+/* playstation plus */
+.gs-ps-plus {
+  background-color: rgb(190,188,187);
+}
+
+.gs-psp-img {
+  height: 60px; /* questa poi andrà tolta */
+  background-color: chocolate;
+  margin-bottom: 20px;
+}
+
+.gs-psp-image {
+  height: 100%; /* quesat poi andrà tolta */
+  background-color: chocolate;
+}
+/* playstation plus ends */
+
+/* discount */
+.gs-sales-image {
+  height: 200px; /* questa poi andrà tolta */
+  background-color: darkgreen;
+  margin-top: 4px;
+}
+/* discount ends */
+
+/* playstation now  */
+.gs-ps-now {
+  background-color: rgb(22,28,59);
+  color: white;
+}
+
+.gs-psn-img {
+  height: 60px; /* questa poi andrà tolta */
+  background-color: chocolate;
+  margin-bottom: 20px;
+}
+
+.gs-psn-image {
+  height: 100%;
+  background-color: chocolate;
+}
+/* playstation now ends */
+
+/* socials */
+.gs-social-image {
+  height: 100px; /* questa andrà tolta */
+  background-color: yellowgreen;
+  margin-top: 4px;
+}
+/* socials ends */
