@@ -98,10 +98,13 @@
 /* ps5 ends */
 
 /* new games */
+.gs-bg-new-game {
+  background-color: rgb(31,31,31);
+  color: white;
+}
 
 .new-game {
   /* questa poi andrà tolta */
-  background-color: darkviolet;
   margin: 6px;
   padding: 0 !important;
 }
@@ -112,3 +115,12 @@
     width: 15%;
   }
 }
+/* new games ends */
+
+/* never stop exploring */
+.gs-ps4 {
+  height: 100px;
+  background-color: dodgerblue;
+
+}
+/* never stop exploring ends */
