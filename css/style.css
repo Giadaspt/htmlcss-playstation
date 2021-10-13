@@ -62,7 +62,6 @@
 }
 
 /* cards after jumbotron */
-
 .gs-container-90 {
   width: 90%;
   margin: 0 auto; 
@@ -72,4 +71,24 @@
   height: 100px; /* questa andrà tolta */
   background-color: darkgoldenrod;
   margin: 8px;
+}
+/* cards end */
+
+/* playstation 5 */ 
+.title-ps5 {
+  padding: 68px 0;
+}
+
+.gs-img-ps5 {
+  height: 200px;
+  background-color: darkolivegreen;
+}
+
+.gs-ps5-more {
+  height: 100px; /* questa poi andrà tolta */
+  background-color: darkslateblue;
+}
+
+.gs-accessori-ps5 {
+  padding-top: 48px;
 }
