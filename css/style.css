@@ -30,5 +30,6 @@
 }
 
 .chevron img{
+  flex-wrap: nowrap;
   width: 10px ;
 }
