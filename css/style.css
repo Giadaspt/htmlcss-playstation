@@ -1,5 +1,15 @@
-/* header */
+/* custom containers */
+.gs-container-90 {
+  width: 90%;
+  margin: 0 auto; 
+}
 
+.gs-container-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header */
 .container-fluid{
   padding: 0 !important;
 }
@@ -49,24 +59,17 @@
 .gs-jumbo {
   height: 800px; /*questa andrà tolta*/
   background-color: brown;
+  align-items: end;
+  padding-bottom: 60px;
 }
 .gs-image {
   height: 200px; /*questa andrà tolta*/
   width: 200px; /*questa andrà tolta*/
   background-color: chartreuse;
 }
-
-.gs-jumbo {
-  align-items: end;
-  padding-bottom: 60px;
-}
+/* jumbotron ends */
 
 /* cards after jumbotron */
-.gs-container-90 {
-  width: 90%;
-  margin: 0 auto; 
-}
-
 .cards {
   height: 100px; /* questa andrà tolta */
   background-color: darkgoldenrod;
@@ -91,4 +94,21 @@
 
 .gs-accessori-ps5 {
   padding-top: 48px;
+}
+/* ps5 ends */
+
+/* new games */
+
+.new-game {
+  /* questa poi andrà tolta */
+  background-color: darkviolet;
+  margin: 6px;
+  padding: 0 !important;
+}
+
+
+@media (min-width:991px) {
+  .col-lg-2.new-game {
+    width: 15%;
+  }
 }
