@@ -14,6 +14,16 @@
   margin: 0 auto;
 }
 
+/* general class to capityalize words and font weight*/
+.capital {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.bolding {
+  font-weight: 600;
+}
+
 /* header */
 .container-fluid{
   padding: 0 !important;
@@ -72,51 +82,79 @@
   left: 10px;
   top: 6px;
 }
-
 /* header ends */
 
 /* jumbotron */
-.gs-jumbo {
-  height: 800px; /*questa andrà tolta*/
-  background-color: brown;
-  align-items: end;
-  padding-bottom: 60px;
+.container-fluid.gs-bg-jumbo {
+  margin-top: 120px;
+  background-image: url('../img/jumbo-bg.png');
+  background-position: center;
+  background-size: cover;
 }
 
-.gs-image {
-  height: 200px; /*questa andrà tolta*/
-  width: 200px; /*questa andrà tolta*/
-  background-color: chartreuse;
+.gs-jumbo {
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
-/* jumbotron ends */
+
+.gs-jumbo-text {
+  padding: 32px 0;
+}
+
+.gs-image img{
+  width: 100%;
+}
 
 /* cards after jumbotron */
-.cards {
-  height: 100px; /* questa andrà tolta */
-  background-color: darkgoldenrod;
+.cards img{
+  width: 100%;
   margin: 8px;
+  border-radius: 10px;
 }
-/* cards end */
 
 /* playstation 5 */ 
 .title-ps5 {
-  padding: 68px 0;
+  padding: 68px 0 100px 0;
 }
 
-.gs-img-ps5 {
-  height: 200px;
-  background-color: darkolivegreen;
+.gs-image-ps5 img{
+  width: 100%;
 }
 
-.gs-ps5-more {
-  height: 100px; /* questa poi andrà tolta */
-  background-color: darkslateblue;
+.gs-ps5-more img{
+  width: 100%;
+}
+
+.gs-ps5-more:hover{
+  opacity: 5 !important;
 }
 
 .gs-accessori-ps5 {
   padding-top: 48px;
 }
-/* ps5 ends */
+
+/* content area similar to jumbotron */
+.container-fluid.gs-bg-middle-content{
+  background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.gs-mid-content {
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.gs-mid-cont-text {
+  padding: 32px 0;
+}
+
+.gs-imag img{
+  width: 100%;
+}
+
 
 /* new games */
 .gs-bg-new-game {
@@ -129,9 +167,6 @@
   margin: 6px;
   padding: 0 !important;
 }
-
-
-
 /* new games ends */
 
 /* never stop exploring */
@@ -195,10 +230,6 @@
 
 /* media query */
 @media (min-width: 400px) {
-  a.nav-link  .gs-search {
-    visibility: hidden !important;
-  }
-
   a.nav-link.active.gs-nav-button {
     width: 50%;
   }
@@ -207,9 +238,6 @@
 @media (min-width:991px) {
   .col-lg-2.new-game {
     width: 15%;
-  }
-  a.nav-link  .gs-search {
-  visibility: visible !important;
   }
   a.nav-link.active.gs-nav-button {
     width: 100%;
