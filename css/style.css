@@ -34,10 +34,6 @@
   margin: 0 auto;
 }
 
-.sony {
-  background-color: black;
-}
-
 .sony-logo img {
   position: sticky;
   width: 70px;
@@ -102,13 +98,8 @@
   padding: 32px 0;
 }
 
-.gs-image img{
-  width: 100%;
-}
-
 /* cards after jumbotron */
 .cards img{
-  width: 100%;
   margin: 8px;
   border-radius: 10px;
 }
@@ -116,14 +107,6 @@
 /* playstation 5 */ 
 .title-ps5 {
   padding: 68px 0 100px 0;
-}
-
-.gs-image-ps5 img{
-  width: 100%;
-}
-
-.gs-ps5-more img{
-  width: 100%;
 }
 
 .gs-ps5-more:hover{
@@ -143,18 +126,12 @@
 
 .gs-mid-content {
   color: white;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 60px;
 }
 
 .gs-mid-cont-text {
   padding: 32px 0;
 }
-
-.gs-imag img{
-  width: 100%;
-}
-
 
 /* new games */
 .gs-bg-new-game {
@@ -163,36 +140,18 @@
 }
 
 .new-game {
-  /* questa poi andrà tolta */
-  margin: 6px;
   padding: 0 !important;
+  border-radius: 30px;
 }
-/* new games ends */
 
-/* never stop exploring */
-.gs-ps4 {
-  height: 100px;
-  background-color: dodgerblue;
-
+.new-game img {
+  border-radius: 20px;
 }
-/* never stop exploring ends */
 
 /* playstation plus */
 .gs-ps-plus {
   background-color: rgb(190,188,187);
 }
-
-.gs-psp-img {
-  height: 60px; /* questa poi andrà tolta */
-  background-color: chocolate;
-  margin-bottom: 20px;
-}
-
-.gs-psp-image {
-  height: 100%; /* quesat poi andrà tolta */
-  background-color: chocolate;
-}
-/* playstation plus ends */
 
 /* discount */
 .gs-sales-image {
@@ -200,7 +159,7 @@
   background-color: darkgreen;
   margin-top: 4px;
 }
-/* discount ends */
+
 
 /* playstation now  */
 .gs-ps-now {
