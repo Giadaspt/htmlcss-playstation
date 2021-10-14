@@ -14,14 +14,58 @@
   margin: 0 auto;
 }
 
-/* general class to capityalize words and font weight*/
-.capital {
-  text-transform: uppercase;
+/* general class for font weight*/
+.bolding {
   font-weight: 600;
 }
 
-.bolding {
+/* buttons */
+.btn.nav-link {
+  background-color: rgb(54,54,54) !important;
+  border-radius: 20px;
+}
+
+.btn {
   font-weight: 600;
+  border-radius: 20px;
+}
+
+.gs-btn-blue {
+  background-color: rgb(45,100,229);
+}
+
+.gs-btn-red {
+  background-color: rgb(205,61,15);
+}
+
+.gs-btn-white {
+  background-color: rgba(255, 255, 255, 0.541);
+}
+
+.gs-btn-white2 {
+  background-color: rgb(255, 255, 255);
+}
+
+/* hover */
+.btn.nav-link:hover {
+  background-color: rgb(92,99,106);
+  outline: 3px solid rgb(92,99,106);
+  outline-offset: 1px;
+}
+
+.gs-btn-red:hover {
+  outline: 3px solid rgb(205,61,15);
+  outline-offset: 2px;
+}
+
+.gs-btn-blue:hover {
+  outline: 3px solid rgb(45,100,229);
+  outline-offset: 2px;
+}
+
+.gs-btn-white2:hover {
+  outline: 3px solid rgb(255, 255, 255);
+  outline-offset: 2px;
 }
 
 /* header */
@@ -48,7 +92,7 @@
 }
 
 .hamburger {
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .hamburger-icon i{
@@ -178,7 +222,7 @@
 
 /* media query */
 @media (min-width: 400px) {
-  a.nav-link.active.gs-nav-button {
+  .btn.nav-link {
     width: 50%;
   }
 }
@@ -187,7 +231,7 @@
   .col-lg-2.new-game {
     width: 15%;
   }
-  a.nav-link.active.gs-nav-button {
+  .btn.nav-link {
     width: 100%;
   }
 }
