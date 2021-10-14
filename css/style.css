@@ -159,13 +159,22 @@
   color: white;
 }
 
-/* socials */
-.gs-social-image {
-  height: 100px; /* questa andrà tolta */
-  background-color: yellowgreen;
-  margin-top: 4px;
+/* footer */
+.gs-bg-footer {
+  background-color: rgb(0,67,156);
 }
-/* socials ends */
+
+.globe img {
+  width: 16px;
+}
+
+.bottom-foot img{
+  width: 100px;
+}
+
+.bottom-foot p {
+  font-size: 12px;
+}
 
 /* media query */
 @media (min-width: 400px) {
