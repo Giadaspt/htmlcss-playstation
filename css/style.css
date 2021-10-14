@@ -54,10 +54,25 @@
   list-style: none;
 }
 
+.nav-link.my-ps{
+ padding-left: 0 !important;
+}
+
 .chevron img{
   flex-wrap: nowrap;
   width: 10px ;
 }
+
+.gs-form {
+  position: relative;
+}
+
+.gs-addon {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+}
+
 /* header ends */
 
 /* jumbotron */
@@ -116,11 +131,7 @@
 }
 
 
-@media (min-width:991px) {
-  .col-lg-2.new-game {
-    width: 15%;
-  }
-}
+
 /* new games ends */
 
 /* never stop exploring */
@@ -181,3 +192,27 @@
   margin-top: 4px;
 }
 /* socials ends */
+
+/* media query */
+@media (min-width: 400px) {
+  a.nav-link  .gs-search {
+    visibility: hidden !important;
+  }
+
+  a.nav-link.active.gs-nav-button {
+    width: 50%;
+  }
+}
+
+@media (min-width:991px) {
+  .col-lg-2.new-game {
+    width: 15%;
+  }
+  a.nav-link  .gs-search {
+  visibility: visible !important;
+  }
+  a.nav-link.active.gs-nav-button {
+    width: 100%;
+  }
+}
+

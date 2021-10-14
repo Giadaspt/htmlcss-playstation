@@ -32,7 +32,7 @@
           <span class="navbar-toggler-icon hamburger-icon"> <i class="fas fa-bars"></i></span>
         </button>
 
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -150,9 +150,9 @@
           </ul>
 
           <!--  right side of the menu -->
-          <ul class="nav nav-pills">
+          <ul class="nav nav-pills flex-column flex-lg-row">
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link my-ps" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 My Playstation
                 <span class="chevron"> <img src="img/chevron-down-solid.svg" alt=""> </span>
               </a>
@@ -169,19 +169,24 @@
                 </ul>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Accedi</a>
+            <li class="nav-item mt-4">
+              <a class="nav-link active gs-nav-button" aria-current="page" href="#">Accedi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">
-                <span> <i class="fas fa-search"></i> </span>
+                <span class="gs-search"> <i class="fas fa-search"></i> </span>
               </a>
             </li>
           </ul>
 
-          <!-- <form class="d-flex gs-form navbar-toggler navbar-collapse collapse ">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form> -->
+          <form class="d-lg-none gs-form">
+            <div class="form-group  input-group-addon"> 
+              <span class="gs-addon">
+                <i class="fas fa-search"></i>
+              </span>
+              <input class="form-control d-lg-none" type="search"  aria-label="Search">
+            </div>
+          </form>
         </div>
       </div>
     </nav>
