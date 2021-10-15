@@ -39,7 +39,7 @@
 }
 
 .gs-btn-white {
-  background-color: rgba(255, 255, 255, 0.541);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .gs-btn-white2 {
@@ -47,6 +47,11 @@
 }
 
 /* hover */
+.navbar-nav .nav-item:hover .nav-link,
+.nav-link.my-ps:hover{
+  color: rgb(45,100,229);
+}
+
 .btn.nav-link:hover {
   background-color: rgb(92,99,106);
   outline: 3px solid rgb(92,99,106);
@@ -63,9 +68,33 @@
   outline-offset: 2px;
 }
 
+.gs-btn-white:hover {
+  outline: 3px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 1px;
+}
+
 .gs-btn-white2:hover {
   outline: 3px solid rgb(255, 255, 255);
   outline-offset: 2px;
+}
+
+.gs-cards:hover {
+  scale: 1.2;
+  opacity: 1 !important;
+}
+
+.gs-cards img:hover {
+  box-shadow: 0px 3px 6px 3px darkgrey;
+}
+
+.new-game:hover,
+.gs-discount:hover,
+.gs-media:hover {
+  scale: 1.1;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: transparent;
 }
 
 /* header */
@@ -87,8 +116,9 @@
   background-color: white !important;
 }
 
-.navbar a {
-  color: black !important;
+.navbar-light .navbar-nav .nav-link,
+.fa-search {
+  color: black ;
 }
 
 .hamburger {
@@ -105,12 +135,47 @@
 }
 
 .nav-link.my-ps{
- padding-left: 0 !important;
+  color: black;
+  padding-left: 0 !important;
 }
 
-.chevron img{
+.gs-chevron,
+.gs-chev-over {
   flex-wrap: nowrap;
   width: 10px ;
+} 
+
+/* .gs-chev-over {
+  display: none;
+} 
+
+.gs-chevron:hover {
+  display: none;
+} 
+
+.gs-chev-over:hover {
+   display: block;
+} 
+
+.nav {
+  margin-bottom: 0; 
+} */
+
+.dropdown { 
+  position: static; 
+  margin-top: 0 !important;
+}
+.dropdown-menu { 
+  width: 100%; text-align: center; 
+  margin-top: 0 !important;
+}
+
+.dropdown-menu>li { 
+  display: inline-block; 
+}
+
+.dropdown-menu[data-bs-popper] {
+  top:90%;
 }
 
 .gs-form {
@@ -122,6 +187,7 @@
   left: 10px;
   top: 6px;
 }
+
 /* header ends */
 
 /* jumbotron */
@@ -142,10 +208,36 @@
   padding: 32px 0;
 }
 
+.gs-imag {
+  animation: gslide 1.5s ease-in-out;
+}
+
+@keyframes gslide {
+  0% {
+    opacity: 0;
+    transform: translateY(75%);
+  }
+
+  50% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: .8;
+    transform: none;
+  }
+}
+
+
 /* cards after jumbotron */
-.cards img{
+.gs-cards img{
   margin: 8px;
   border-radius: 10px;
+}
+
+.active.gs-cards img{
+  outline: 3px solid rgb(45,100,229);
+  outline-offset: 2px;
 }
 
 /* playstation 5 */ 
@@ -153,8 +245,12 @@
   padding: 68px 0 100px 0;
 }
 
+ .gs-ps5-more.active {
+   border-bottom: 2px solid rgb(45,100,229);
+ }
+
 .gs-ps5-more:hover{
-  opacity: 5 !important;
+  opacity: 1 !important;
 }
 
 .gs-accessori-ps5 {
@@ -192,6 +288,22 @@
   border-radius: 20px;
 }
 
+/* never stop exploring */
+.gs-appear {
+  animation: appear 1.5s ease-in-out;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .8;
+  }
+}
+
+
 /* playstation plus */
 .gs-ps-plus {
   background-color: rgb(190,188,187);
@@ -221,7 +333,7 @@
 }
 
 /* media query */
-@media (min-width: 400px) {
+@media (min-width: 200px) {
   .btn.nav-link {
     width: 50%;
   }
